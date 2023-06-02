@@ -7,7 +7,7 @@ List<TaxPayer> list = new();
 
 for (int i = 0; i < n; i++)
 {
-    Console.WriteLine($"Dados da {i + 1}a pessoa:");
+    Console.WriteLine($"Dados do {i + 1}o contribuinte:");
     Console.Write("Pessoa física ou jurídica (f/j)? ");
     char ans = char.Parse(Console.ReadLine());
 
@@ -19,7 +19,7 @@ for (int i = 0; i < n; i++)
 
     if (ans == 'f')
     {
-        Console.Write("Despesas médias: ");
+        Console.Write("Despesas médicas: ");
         double healthExpenditures = double.Parse(Console.ReadLine());
 
         list.Add(new Individual(name, anualIncome, healthExpenditures));
